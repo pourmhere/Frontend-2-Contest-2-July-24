@@ -88,13 +88,12 @@ function handleSubmit(event) {
         if (confirm("Do you want to submit the form?")) {
             alert("Successful Signup!");
             document.getElementById('signup-form').reset();
+            successMessage.style.display = 'none';
+
         } else {
             document.getElementById('signup-form').reset();
             successMessage.style.display = 'none';
 
         }
-    } else {
-        successMessage.style.display = 'none';
-
     }
 }
